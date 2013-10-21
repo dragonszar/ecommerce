@@ -1,0 +1,19 @@
+<h1>New shoppint_cart</h1>
+
+<% form_for(@shoppint_cart) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :items %><br />
+    <%= f.text_field :items %>
+  </p>
+  <p>
+    <%= f.label :quantit %><br />
+    <%= f.text_field :quantit %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', shoppint_carts_path %>

@@ -1,0 +1,13 @@
+<p>
+  <b>Items:</b>
+  <%=h @shoppint_cart.items %>
+</p>
+
+<p>
+  <b>Quantit:</b>
+  <%=h @shoppint_cart.quantit %>
+</p>
+
+
+<%= link_to 'Edit', edit_shoppint_cart_path(@shoppint_cart) %> |
+<%= link_to 'Back', shoppint_carts_path %>

@@ -1,0 +1,13 @@
+<p>
+  <b>Items:</b>
+  <%=h @order.items %>
+</p>
+
+<p>
+  <b>Quantit:</b>
+  <%=h @order.quantit %>
+</p>
+
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

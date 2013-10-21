@@ -1,0 +1,13 @@
+<p>
+  <b>Items:</b>
+  <%=h @inventory.items %>
+</p>
+
+<p>
+  <b>Quantit:</b>
+  <%=h @inventory.quantit %>
+</p>
+
+
+<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
+<%= link_to 'Back', inventories_path %>

@@ -1,0 +1,22 @@
+<h1>Listing shoppint_carts</h1>
+
+<table>
+  <tr>
+    <th>Items</th>
+    <th>Quantit</th>
+  </tr>
+
+<% @shoppint_carts.each do |shoppint_cart| %>
+  <tr>
+    <td><%=h shoppint_cart.items %></td>
+    <td><%=h shoppint_cart.quantit %></td>
+    <td><%= link_to 'Show', shoppint_cart %></td>
+    <td><%= link_to 'Edit', edit_shoppint_cart_path(shoppint_cart) %></td>
+    <td><%= link_to 'Destroy', shoppint_cart, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New shoppint_cart', new_shoppint_cart_path %>
